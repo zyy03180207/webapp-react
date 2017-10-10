@@ -1,0 +1,38 @@
+@import 'Theme.less';
+@prefixCls: grid;
+.@{prefixCls} {
+  width:100%;
+  display: flex;
+  background:transparent;
+  flex-wrap:wrap;
+  align-content:center;
+  align-items:stretch;
+  color:#333;
+}
+.@{prefixCls}-item{
+  text-align: center;
+}
+.@{prefixCls}-title {
+ 
+}
+.@{prefixCls}-icon {
+  color:@theme-base;
+}
+.@{prefixCls}-icon i {
+  font-size:1.8rem;
+}
+.@{prefixCls}-item-border {
+}
+.@{prefixCls}-item-border:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    background:#999;
+    -webkit-transform: scale(1,.5);
+    transform: scale(1,.5);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom
+}

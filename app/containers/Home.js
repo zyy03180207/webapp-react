@@ -7,6 +7,8 @@ import './Home.less'
 
 import Grid from '../components/Grid.js';
 import TabBar from '../navigation/TabBar.js';
+import NavBar from '../navigation/NavBar.js';
+
 import {updateTab,updateTop,updateFun} from '../actions/global.js'
 
 
@@ -81,6 +83,7 @@ class Home extends Component {
         let menus = this.getMenus();
         return (
             <div>
+            <NavBar title="" backText="登陆" backIcon="icon-hzl_login"/>
             {quick}
             {menus}
             <TabBar data={this.state.tabMenus} onClick={this.toUrl}/>
