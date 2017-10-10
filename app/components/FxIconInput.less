@@ -1,0 +1,54 @@
+@import 'Theme.less';
+@prefixCls: fx-iconinput;
+
+.@{prefixCls} {
+    width:98%;
+    padding:0 1%;
+    display: flex;
+    align-content:center;
+    align-items:center;
+    font-size:@theme-size;
+    flex-wrap:wrap;
+    border-bottom:1px solid @theme-base;
+   &-title{
+    width:18%;
+    padding:0 1%;
+    text-align:center;
+   }
+   &-content{
+    width:80%;
+    vertical-align: middle;
+   }
+   &-input{
+    width:88%;
+    height:1.6rem;
+    padding-left:1%;
+    padding-right:10%;
+    font-size:@theme-size;
+    border:none;
+    background:transparent;
+    outline: none;
+   }
+    &-passwd{
+    display:inline; 
+    position: absolute;
+    font-size:@theme-size; 
+    color:#BBB; 
+    margin: 0.6rem 0 0 -1.6rem; 
+    outline: none; 
+   }
+
+   &-clear{
+    display:none; 
+    position: absolute;
+    font-size:@theme-size; 
+    color:#BBB; 
+    margin: 0.5rem 0 0 -1.6rem; 
+    outline: none; 
+   }
+   &-input:valid + &-clear { 
+    display: inline;
+   }
+}
+
+

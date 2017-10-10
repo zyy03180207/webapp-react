@@ -1,0 +1,48 @@
+.headerText{
+  display: flex;
+  align-items: center;
+  height: 1rem;
+  padding-top:0.22rem;
+  background-color: #fa4b4b;
+  color: #FFFFFF;
+
+}
+.headerFixed{
+  position:fixed; 
+  left: 0;width:100%;
+  padding-top:0rem;
+  display: flex;
+  align-items: center;
+  height: 1rem;
+  background-color: #fa4b4b;
+  color: #FFFFFF;
+  z-index:999;
+}
+.headerLeft,.headerTitle,.headerRight{
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.headerLeft{
+  padding-left:10px;
+}
+.headerLeftCont{
+font-size:.4rem;
+}
+.headerTitle{
+  justify-content:center;
+  white-space: nowrap;
+  font-size:.4rem;
+}
+
+.headerRight{
+  justify-content: flex-end;
+  margin-right: 8px;
+  font-size:.4rem;
+}
+
+.headerRightCont{
+  font-size:.4rem;
+}
+

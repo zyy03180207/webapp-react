@@ -1,0 +1,35 @@
+@import '../Theme.less';
+@prefixCls: tabbar;
+.@{prefixCls} {
+  width:100%;
+  display: flex;
+  z-index:999;
+  background:#FFFFFF;
+  flex-wrap:wrap;
+  align-content:center;
+  position: fixed;
+  bottom: 0;
+  &:before{
+    content: '';
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 1px;
+    background:#999;
+    -webkit-transform: scale(1,.5);
+    transform: scale(1,.5);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+  }
+  &-item{
+    text-align: center;
+  }
+  &-title {
+    color:#333;
+    font-size:0.7rem;
+  }
+  &-icon {
+    padding-top:0.5rem;
+    color:@theme-base;
+  }
+}
