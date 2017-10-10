@@ -1,0 +1,31 @@
+@import '../Theme.less';
+@prefixCls: navbar;
+.@{prefixCls}{
+  width:100%;
+  display: flex;
+  z-index:999;
+  align-items:center;
+  background:-webkit-linear-gradient(left top, #fa4b4b, #fa744b);
+  height:3rem;
+  position: fixed;
+  top: 0;
+  &-back{
+    width:20%;
+    padding-left:2%;
+    text-align:left;
+    color:#FFF;
+  }
+ 
+  &-title{
+    width:56%;
+    text-align:center;
+    color:#FFF;
+  } 
+  
+  &-menu{
+    width:19%;
+    padding-right:3%;
+    text-align:right;
+  }
+}
+
